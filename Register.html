@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css" />
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        .jumbotron {
+            width: 60%;
+            margin: 80px auto auto auto;
+            background-color: #F8FAFC;
+        }
+
+        h4 {
+            color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1> Register Here</h1>
+        <p>Please Fill All Fields</p>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-sm-4">
+                <label>First Name</label>
+                <input type="text" name="txt_fname" class="form-control" placeholder="First Name" />
+
+            </div>
+            <div class="col-sm-4">
+                <label>Middle Name</label>
+                <input type="text" name="txt_mname" class="form-control" placeholder="Middle Name" />
+
+            </div>
+            <div class="col-sm-4">
+                <label>Last Name</label>
+                <input type="text" name="txt_lname" class="form-control" placeholder="Last Name" />
+
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-sm-4">
+                <label>City</label>
+                <select class="form-control">
+                    <option>Gadhinglaj</option>
+                    <option>Ajara</option>
+                    <option>Chandgad</option>
+                </select>
+            </div>
+            <div class="col-sm-8">
+                <label>Address</label>
+                <textarea name="address" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label>Contact NO</label>
+                <input type="text" name="txt_contact" class="form-control" placeholder="Enter Contact" />
+
+            </div>
+            <div class="col-sm-6">
+                <label>Email</label>
+                <input type="email" name="txt_email" class="form-control" placeholder="Enter Email" />
+
+            </div>
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-sm-9"></div>
+            <div class="col-sm-3">
+                <button type="submit" value="Register" class="btn btn-primary">Register</button>
+                <button type="submit" value="Register" class="btn btn-primary">Cancel</button>
+            </div>
+        </div>
+
+
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Register</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Login</li>
+  </ol>
+</nav>
+
+    </div>
+</body>
+
+</html>
