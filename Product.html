@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleHub - Products</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/product_style.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand logo" href="#">
+            Style<span>Hub</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Men</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Women</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">New Arrivals</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-icons d-flex align-items-center gap-3">
+
+                <a href="#" class="icon-link">
+                    <i class="bi bi-search"></i>
+                </a>
+
+                <a href="#" class="icon-link">
+                    <i class="bi bi-person"></i>
+                </a>
+
+                <a href="#" class="icon-link cart-icon">
+                    <i class="bi bi-bag"></i>
+                    <span>2</span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+
+        <div class="breadcrumb-area">
+            <a href="#">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <span>Shop</span>
+        </div>
+
+        <h1>Our Products</h1>
+
+        <p>
+            Discover stylish and premium clothing designed for your everyday look.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- Products Section -->
+<section class="products-section py-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-lg-3 mb-4">
+
+                <div class="filter-box">
+
+                    <div class="filter-title">
+                        <h5>Filter Products</h5>
+                        <a href="#">Clear All</a>
+                    </div>
+
+                    <hr>
+
+                    <!-- Categories -->
+                    <div class="filter-group">
+
+                        <h6>Categories</h6>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="shirts">
+                            <label class="form-check-label" for="shirts">
+                                Shirts
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="tshirts">
+                            <label class="form-check-label" for="tshirts">
+                                T-Shirts
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="jeans">
+                            <label class="form-check-label" for="jeans">
+                                Jeans
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="jackets">
+                            <label class="form-check-label" for="jackets">
+                                Jackets
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dresses">
+                            <label class="form-check-label" for="dresses">
+                                Dresses
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Size -->
+                    <div class="filter-group">
+
+                        <h6>Size</h6>
+
+                        <div class="size-options">
+
+                            <button>XS</button>
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                            <button>XXL</button>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Price -->
+                    <div class="filter-group">
+
+                        <h6>Price Range</h6>
+
+                        <div class="price-range">
+                            <span>₹500</span>
+                            <span>₹5,000</span>
+                        </div>
+
+                        <input type="range"
+                               class="form-range"
+                               min="500"
+                               max="5000">
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Color -->
+                    <div class="filter-group">
+
+                        <h6>Color</h6>
+
+                        <div class="color-options">
+
+                            <span class="color black"></span>
+                            <span class="color white"></span>
+                            <span class="color blue"></span>
+                            <span class="color grey"></span>
+                            <span class="color brown"></span>
+                            <span class="color green"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Products -->
+            <div class="col-lg-9">
+
+                <!-- Top Toolbar -->
+                <div class="products-toolbar">
+
+                    <div>
+                        <p class="mb-0">
+                            Showing <strong>12</strong> of 48 products
+                        </p>
+                    </div>
+
+                    <div class="sort-box">
+
+                        <label>Sort By:</label>
+
+                        <select class="form-select">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest</option>
+                            <option>Best Rating</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product Grid -->
+                <div class="row g-4 mt-1">
+
+                    <!-- Product 1 -->
+                    <div class="col-sm-6 col-xl-4">
+
+                        <div class="product-card">
+
+                            <div class="product-image">
+
+                                <span class="sale-badge">20% OFF</span>
+
+                                <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=600&q=80"
+                                     alt="Classic Shirt">
+
+                                <button class="wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <div class="quick-actions">
+                                    <button>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <p class="product-category">Men's Shirts</p>
+
+                                <h5>Classic Cotton Shirt</h5>
+
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span>(24)</span>
+                                </div>
+
+                                <div class="price">
+                                    <span class="current-price">₹1,199</span>
+                                    <span class="old-price">₹1,499</span>
+                                </div>
+
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-bag-plus"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+                    <div class="col-sm-6 col-xl-4">
+
+                        <div class="product-card">
+
+                            <div class="product-image">
+
+                                <span class="new-badge">NEW</span>
+
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+                                     alt="T Shirt">
+
+                                <button class="wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <div class="quick-actions">
+                                    <button>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <p class="product-category">Men's T-Shirts</p>
+
+                                <h5>Premium Basic T-Shirt</h5>
+
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span>(42)</span>
+                                </div>
+
+                                <div class="price">
+                                    <span class="current-price">₹799</span>
+                                </div>
+
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-bag-plus"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+                    <div class="col-sm-6 col-xl-4">
+
+                        <div class="product-card">
+
+                            <div class="product-image">
+
+                                <span class="sale-badge">30% OFF</span>
+
+                                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80"
+                                     alt="Denim Jeans">
+
+                                <button class="wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <div class="quick-actions">
+                                    <button>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <p class="product-category">Men's Jeans</p>
+
+                                <h5>Slim Fit Denim Jeans</h5>
+
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span>(18)</span>
+                                </div>
+
+                                <div class="price">
+                                    <span class="current-price">₹1,399</span>
+                                    <span class="old-price">₹1,999</span>
+                                </div>
+
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-bag-plus"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 4 -->
+                    <div class="col-sm-6 col-xl-4">
+
+                        <div class="product-card">
+
+                            <div class="product-image">
+
+                                <span class="new-badge">NEW</span>
+
+                                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80"
+                                     alt="Jacket">
+
+                                <button class="wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <div class="quick-actions">
+                                    <button>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <p class="product-category">Men's Jackets</p>
+
+                                <h5>Premium Casual Jacket</h5>
+
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span>(31)</span>
+                                </div>
+
+                                <div class="price">
+                                    <span class="current-price">₹2,499</span>
+                                </div>
+
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-bag-plus"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 5 -->
+                    <div class="col-sm-6 col-xl-4">
+
+                        <div class="product-card">
+
+                            <div class="product-image">
+
+                                <span class="sale-badge">25% OFF</span>
+
+                                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=600&q=80"
+                                     alt="Women's Dress">
+
+                                <button class="wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <div class="quick-actions">
+                                    <button>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <p class="product-category">Women's Dresses</p>
+
+                                <h5>Elegant Summer Dress</h5>
+
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span>(27)</span>
+                                </div>
+
+                                <div class="price">
+                                    <span class="current-price">₹1,499</span>
+                                    <span class="old-price">₹1,999</span>
+                                </div>
+
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-bag-plus"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 6 -->
+                    <div class="col-sm-6 col-xl-4">
+
+                        <div class="product-card">
+
+                            <div class="product-image">
+
+                                <span class="sale-badge">15% OFF</span>
+
+                                <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80"
+                                     alt="Hoodie">
+
+                                <button class="wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <div class="quick-actions">
+                                    <button>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <p class="product-category">Unisex</p>
+
+                                <h5>Premium Casual Hoodie</h5>
+
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span>(19)</span>
+                                </div>
+
+                                <div class="price">
+                                    <span class="current-price">₹1,699</span>
+                                    <span class="old-price">₹1,999</span>
+                                </div>
+
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-bag-plus"></i>
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Pagination -->
+                <div class="pagination-area">
+
+                    <nav>
+                        <ul class="pagination">
+
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">
+                                    <i class="bi bi-chevron-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4">
+
+                <h4 class="footer-logo">
+                    Style<span>Hub</span>
+                </h4>
+
+                <p>
+                    Your destination for modern, stylish and affordable fashion.
+                    Discover clothing that fits your lifestyle.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h6>Shop</h6>
+
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h6>Help</h6>
+
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <h6>Newsletter</h6>
+
+                <p>
+                    Subscribe to receive updates about new collections and offers.
+                </p>
+
+                <div class="newsletter">
+
+                    <input type="email"
+                           class="form-control"
+                           placeholder="Enter your email">
+
+                    <button>
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+            <p>© 2026 StyleHub. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

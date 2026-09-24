@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP | ShopEase</title>
+    <link rel="stylesheet" href="./CSS/otp.css">
+</head>
+
+<body>
+    <main class="otp-page">
+        <section class="otp-card" aria-labelledby="otp-title">
+            <a class="brand" href="./index.html" aria-label="ShopEase home">
+                Shop<span>Ease</span>
+            </a>
+
+            <div class="shield-icon" aria-hidden="true">&#128274;</div>
+
+            <div class="otp-heading">
+                <p class="eyebrow">Account security</p>
+                <h1 id="otp-title">Verify your account</h1>
+                <p class="description">
+                    Enter the 6-digit verification code sent to your registered mobile number.
+                </p>
+            </div>
+
+            <form class="otp-form" action="#" method="post">
+                <label for="otp-1">Verification code</label>
+                <div class="otp-inputs" role="group" aria-label="Six digit verification code">
+                    <input id="otp-1" name="otp-1" type="text" inputmode="numeric" maxlength="1" autocomplete="one-time-code" required autofocus aria-label="First digit">
+                    <input id="otp-2" name="otp-2" type="text" inputmode="numeric" maxlength="1" required aria-label="Second digit">
+                    <input id="otp-3" name="otp-3" type="text" inputmode="numeric" maxlength="1" required aria-label="Third digit">
+                    <input id="otp-4" name="otp-4" type="text" inputmode="numeric" maxlength="1" required aria-label="Fourth digit">
+                    <input id="otp-5" name="otp-5" type="text" inputmode="numeric" maxlength="1" required aria-label="Fifth digit">
+                    <input id="otp-6" name="otp-6" type="text" inputmode="numeric" maxlength="1" required aria-label="Sixth digit">
+                </div>
+
+                <button class="verify-btn" type="submit">Verify OTP <span aria-hidden="true">&#8594;</span></button>
+            </form>
+
+            <p class="resend-text">Didn't receive the code? <a href="#">Resend OTP</a></p>
+            <a class="back-link" href="./Login3.html">&#8592; Back to login</a>
+        </section>
+    </main>
+</body>
+
+</html>
